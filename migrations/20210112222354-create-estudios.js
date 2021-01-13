@@ -18,7 +18,8 @@ module.exports = {
         type: Sequelize.STRING
       },
       date: {
-        type: Sequelize.STRING
+        type: Sequelize.DATEONLY,
+                
       },
       id_certificate: {
         type: Sequelize.STRING

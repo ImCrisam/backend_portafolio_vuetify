@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     type: DataTypes.STRING,
     title: DataTypes.STRING,
     company: DataTypes.STRING,
-    date: DataTypes.STRING,
+    date: DataTypes.DATEONLY,
     id_certificate: DataTypes.STRING,
     duration: DataTypes.STRING,
     image: DataTypes.STRING,

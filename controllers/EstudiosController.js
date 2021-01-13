@@ -7,7 +7,7 @@ module.exports = {
 
     add: async (req, res, next) => {
         try {
-                        
+
             const reg = await models.Estudios.create(req.body);
             res.status(200).json(reg);
         } catch (e) {
@@ -40,6 +40,22 @@ module.exports = {
         try {
             let valor = req.query.valor;
             const reg = await models.Estudios.findAll();
+            res.status(200).json(reg);
+
+        } catch (e) {
+            res.status(500).send({
+                message: 'Error -> ' + e
+            });
+            next(e);
+        }
+    },
+    recentList: async (req, res, next) => {
+        try {
+            let valor = req.query.valor;
+            const reg = await models.Estudios.findAll({
+                order: [["date","DESC"]],
+                limit: 10,
+            });
             res.status(200).json(reg);
 
         } catch (e) {
