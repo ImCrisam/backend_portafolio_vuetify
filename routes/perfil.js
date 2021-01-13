@@ -12,4 +12,5 @@ router.put('/deactivate', perfilController.deactivate);
 
 router.get('/list', perfilController.list);
 
+
 module.exports = router;
