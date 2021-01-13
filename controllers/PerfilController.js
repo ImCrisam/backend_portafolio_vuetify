@@ -7,6 +7,20 @@ module.exports = {
             const reg = await models.Perfil.findOne({
                 id: req.query.id
             });
+            const languagesChips = await models.LanguagesChips.findAll({
+                include: [{
+                    model: Chips,
+                    as: 'LanguagesChips'
+                }],
+            });
+            const toolsChips = await models.ToolsChips.findAll({
+                include: [{
+                    model: Chips,
+                    as: 'ToolsChips'
+                }],
+            });
+            reg.languages_code = languagesChips;
+            reg.tools_code = toolsChips;
             if (!reg) {
                 res.status(404).send({
                     message: 'User Not Found.'

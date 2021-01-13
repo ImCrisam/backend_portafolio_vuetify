@@ -16,11 +16,4 @@ router.get('/describe', auth.verifyUsuario, usuarioController.describe);
 
 router.post('/login',  usuarioController.login);
 
-router.get('/listRoles', usuarioController.listRoles);
-router.get('/listTypeDocumento', auth.verifyUsuario, usuarioController.listTypeDocumento);
-router.get('/listTypeRoles', auth.verifyUsuario, usuarioController.listTypeRoles);
-
-router.get('/', function (req, res) {
-    res.send("conectado");
-});
 module.exports = router;

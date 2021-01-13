@@ -1,52 +1,13 @@
 var bcrypt = require('bcryptjs');
 const models = require('../models');
-const token = require('../services/token');
 
 
 module.exports = {
-    login: async (req, res, next) => {
-        try {
-            let user = await models.Usuario.findOne({
-                where: {
-                    email: req.body.email
-                }
-            });
 
-            if (user) {
-                let match = await bcrypt.compare(req.body.password, user.password);
-
-                if (match) {
-
-                    let tokenReturn = await token.encode(user.id, user.rol, user.nombre, user.email);
-
-                    res.status(200).json({
-                        user,
-                        tokenReturn
-                    });
-                } else {
-                    res.status(401).send({
-                        auth: false,
-                        accessToken: null,
-                        reason: "Invalid Password!"
-                    });
-                }
-            } else {
-                res.status(404).send({
-                    message: 'User Not Found.'
-                });
-            }
-        } catch (e) {
-            res.status(500).send({
-                message: 'Error -> ' + e
-            });
-            next(e);
-        }
-    },
     add: async (req, res, next) => {
         try {
-            req.body.password = await bcrypt.hash(req.body.password, 10);
-            /* console.log(req.body); */
-            const reg = await models.Usuario.create(req.body);
+
+            const reg = await models.Proyecto.create(req.body);
             res.status(200).json(reg);
         } catch (e) {
             res.status(500).send({
@@ -57,7 +18,7 @@ module.exports = {
     },
     query: async (req, res, next) => {
         try {
-            const reg = await models.Usuario.findOne({
+            const reg = await models.Proyecto.findOne({
                 id: req.query.id
             });
             if (!reg) {
@@ -77,7 +38,20 @@ module.exports = {
     list: async (req, res, next) => {
         try {
             let valor = req.query.valor;
-            const reg = await models.Usuario.findAll();
+            const reg = await models.Proyecto.findAll();
+            for (item in reg) {
+
+                const chips = await models.ChipsChips.findAll({
+                    where: {
+                        id_proyecto: item.id
+                    },
+                    include: [{
+                        model: Chips,
+                        as: 'Chips'
+                    }],
+                });
+                item.chips_code = chips;
+            }
             res.status(200).json(reg);
 
         } catch (e) {
@@ -91,7 +65,7 @@ module.exports = {
     update: async (req, res, next) => {
         try {
             let pas = req.body.password;
-            const reg0 = await models.Usuario.findOne({
+            const reg0 = await models.Proyecto.findOne({
                 where: {
                     id: req.body.id
                 }
@@ -99,7 +73,7 @@ module.exports = {
             if (pas != reg0.password) {
                 req.body.password = await bcrypt.hash(req.body.password, 10);
             }
-            const reg = await models.Usuario.update(req.body, {
+            const reg = await models.Proyecto.update(req.body, {
                 where: {
                     id: req.body.id
                 }
@@ -114,7 +88,7 @@ module.exports = {
     },
     remove: async (req, res, next) => {
         try {
-            const reg = await models.Usuario.findByIdAndDelete({
+            const reg = await models.Proyecto.findByIdAndDelete({
                 id: req.body.id
             });
             res.status(200).json(reg);
@@ -127,7 +101,7 @@ module.exports = {
     },
     activate: async (req, res, next) => {
         try {
-            const reg = await models.Usuario.update({
+            const reg = await models.Proyecto.update({
                 estado: 1
             }, {
                 where: {
@@ -144,7 +118,7 @@ module.exports = {
     },
     deactivate: async (req, res, next) => {
         try {
-            const reg = await models.Usuario.update({
+            const reg = await models.Proyecto.update({
                 estado: 0
             }, {
                 where: {
@@ -163,7 +137,7 @@ module.exports = {
     describe: async (req, res, next) => {
         try {
             let valor = req.query.valor;
-            const reg = await models.Usuario.describe();
+            const reg = await models.Proyecto.describe();
             res.status(200).json(reg);
 
         } catch (e) {
