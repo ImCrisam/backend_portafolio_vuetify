@@ -1,5 +1,5 @@
-
 const models = require('../models');
+const Chips = require('../models').Chips;
 
 module.exports = {
     query: async (req, res, next) => {
@@ -7,20 +7,31 @@ module.exports = {
             const reg = await models.Perfil.findOne({
                 id: req.query.id
             });
+            
+
             const languagesChips = await models.LanguagesChips.findAll({
                 include: [{
                     model: Chips,
-                    as: 'LanguagesChips'
+                    as: 'chips',
                 }],
             });
+
+            var languageslist = [];
+            Object.keys(languagesChips).forEach(key => languageslist.push(languagesChips[key].chips))
+
+
             const toolsChips = await models.ToolsChips.findAll({
                 include: [{
                     model: Chips,
-                    as: 'ToolsChips'
+                    as: 'chips'
                 }],
             });
-            reg.languages_code = languagesChips;
-            reg.tools_code = toolsChips;
+
+            var toolslist = [];
+            Object.keys(toolsChips).forEach(key => toolslist.push(toolsChips[key].chips))
+
+            reg.languages_code = languageslist;
+            reg.tools_code = toolslist;
             if (!reg) {
                 res.status(404).send({
                     message: 'User Not Found.'
@@ -36,7 +47,6 @@ module.exports = {
         }
     },
     list: async (req, res, next) => {
-        console.log('entrada');
         try {
             let valor = req.query.valor;
             const reg = await models.Perfil.findAll();
