@@ -1,5 +1,6 @@
 var bcrypt = require('bcryptjs');
 const models = require('../models');
+const Chips = require('../models').Chips;
 
 
 module.exports = {
@@ -39,18 +40,21 @@ module.exports = {
         try {
             let valor = req.query.valor;
             const reg = await models.Proyecto.findAll();
+            var chips
             for (item in reg) {
-
-                const chips = await models.ChipsChips.findAll({
+                
+                chips = await models.ChipsChips.findAll({
                     where: {
-                        id_proyecto: item.id
+                        id_proyecto: reg[item].id
                     },
                     include: [{
                         model: Chips,
-                        as: 'Chips'
+                        as: 'chips'
                     }],
                 });
-                item.chips_code = chips;
+                var proyectoChips = [];
+                Object.keys(chips).forEach(key => proyectoChips.push(chips[key].chips))
+                reg[item].chips_code = proyectoChips;
             }
             res.status(200).json(reg);
 
