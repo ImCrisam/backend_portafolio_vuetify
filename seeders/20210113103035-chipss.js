@@ -68,6 +68,7 @@ module.exports = {
         estado: 1,
         createdAt: new Date(),
         updatedAt: new Date()
+
       }, {
         nombre: "AndroidStudio",
         icon: "androidstudio",
@@ -107,6 +108,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+
     ]);
 
   },
