@@ -11,6 +11,7 @@ router.put('/activate', perfilController.activate);
 router.put('/deactivate', perfilController.deactivate);
 
 router.get('/list', perfilController.list);
+router.get('/redes', perfilController.listRedSocial);
 
 
 module.exports = router;

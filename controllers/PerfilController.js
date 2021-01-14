@@ -59,6 +59,19 @@ module.exports = {
             next(e);
         }
     },
+    listRedSocial: async (req, res, next) => {
+        try {
+            let valor = req.query.valor;
+            const reg = await models.RedSocial.findAll();
+            res.status(200).json(reg);
+
+        } catch (e) {
+            res.status(500).send({
+                message: 'Error -> ' + e
+            });
+            next(e);
+        }
+    },
     activate: async (req, res, next) => {
         try {
             const reg = await models.Perfil.update({
