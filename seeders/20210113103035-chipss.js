@@ -68,7 +68,45 @@ module.exports = {
         estado: 1,
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      }, {
+        nombre: "AndroidStudio",
+        icon: "androidstudio",
+        nivel: 2,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        nombre: "Git/GitHub",
+        icon: "git",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "SCRUM",
+        icon: "scrum",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Unity",
+        icon: "unity",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Photoshop",
+        icon: "ps",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ]);
 
   },

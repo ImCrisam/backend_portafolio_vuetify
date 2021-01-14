@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     id_certificate: DataTypes.STRING,
     duration: DataTypes.STRING,
     image: DataTypes.STRING,
+    category: DataTypes.STRING,
     estado: DataTypes.INTEGER
   }, {
     sequelize,

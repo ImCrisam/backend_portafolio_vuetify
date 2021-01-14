@@ -30,6 +30,9 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
+      category: {
+        type: Sequelize.STRING
+      },
       estado: {
         type: Sequelize.INTEGER
       },
