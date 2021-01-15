@@ -158,7 +158,7 @@ module.exports = {
       },
       {
         nombre: "MySQL",
-        icon: "mySql",
+        icon: "mysql",
         nivel: 0,
         estado: 1,
         createdAt: new Date(),
