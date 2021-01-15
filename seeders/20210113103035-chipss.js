@@ -148,6 +148,22 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        nombre: "PostgreSQL",
+        icon: "Postgre",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "MySQL",
+        icon: "mySql",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
 
     ]);
 
