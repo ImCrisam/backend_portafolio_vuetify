@@ -11,7 +11,7 @@ module.exports = {
       country: "Colombia",
       city: "Bucaramanga",
       title: "Programador junior",
-      imagen: "aaaaaaaa",
+      imagen: "/proyecto/VideoGame01.jpg",
       languages_code: " ",
       tools_code: " ",
       estado: 1,

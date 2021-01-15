@@ -5,14 +5,14 @@ module.exports = {
 
     return queryInterface.bulkInsert('Chips', [{
         nombre: "CSharp",
-        icon: "C#",
+        icon: "c#",
         nivel: 1,
         estado: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        nombre: "C",
+        nombre: "",
         icon: "c",
         nivel: 0,
         estado: 1,
@@ -20,7 +20,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        nombre: "C++",
+        nombre: "",
         icon: "c++",
         nivel: 1,
         estado: 1,
@@ -48,7 +48,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
-        nombre: "PHP",
+        nombre: "",
         icon: "php",
         nivel: 0,
         estado: 1,
@@ -71,7 +71,7 @@ module.exports = {
 
       }, {
         nombre: "AndroidStudio",
-        icon: "androidstudio",
+        icon: "androids",
         nivel: 2,
         estado: 1,
         createdAt: new Date(),
@@ -109,7 +109,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        nombre: "Vue.js",
+        nombre: "Vue2.js",
         icon: "vue",
         nivel: 1,
         estado: 1,

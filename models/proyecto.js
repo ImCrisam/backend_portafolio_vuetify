@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Proyecto.init({
     title: DataTypes.STRING,
-    categoty: DataTypes.STRING,
+    category: DataTypes.STRING,
     description: DataTypes.STRING,
     imagen: DataTypes.STRING,
     link: DataTypes.STRING,

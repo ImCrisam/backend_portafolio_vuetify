@@ -13,7 +13,7 @@ const router = routerx();
 
 router.use('/perfil', perfilRouter);
 router.use('/usuario', usuarioRouter);
-router.use('/proyecto', proyectoRouter);
+router.use('/proyectos', proyectoRouter);
 router.use('/estudios', estudioRouter);
 
 module.exports = router;

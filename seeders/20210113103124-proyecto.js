@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.bulkInsert('Proyectos', [
       {
       title: "SpaceMan",
-      categoty: "VideoGame",
+      category: "VideoGame",
       description: "Primero proyecto realizado con Unity, basado en el Curso: “C# para Videojuegos” en platzi",
       imagen: "/proyecto/VideoGame01.jpg",
       link: "https://imcrisam.itch.io/spaceman-platzi",
@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         title: "BreachBreaker",
-        categoty: "VideoGame",
+        category: "VideoGame",
         description: "Proyecto con Unity, basado en el Curso: “Desarrollo de Videojuegos para Móviles con Unity” en Platzi",
         imagen: "/proyecto/VideoGame02.jpg",
         link: "https://imcrisam.itch.io/breachbreaker",
@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         title: "Protefolio_Frontend",
-        categoty: "Frontend",
+        category: "Frontend",
         description: "Proyecto con Vue2-cli y Vuetify para la creación de este portafolio",
         imagen: "",
         link: "/",
@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         title: "Protefolio_Frontend",
-        categoty: "Backend",
+        category: "Backend",
         description: "Backend (API) de este proyecto “portafolio” creada con express.js",
         imagen: "",
         link: "/",

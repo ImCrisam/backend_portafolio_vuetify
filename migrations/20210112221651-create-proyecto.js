@@ -11,7 +11,7 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
-      categoty: {
+      category: {
         type: Sequelize.STRING
       },
       description: {
