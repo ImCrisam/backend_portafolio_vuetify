@@ -5,32 +5,44 @@ module.exports = {
 
     return queryInterface.bulkInsert('ChipsChips', [
       {
+        id_proyecto: 1,
         id_chip: 1,
-        id_proyecto: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        id_chip: 2,
         id_proyecto: 1,
+        id_chip: 13,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        id_chip: 3,
-        id_proyecto: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        id_chip: 4,
         id_proyecto: 2,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
         id_chip: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         id_proyecto: 2,
+        id_chip: 13,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 3,
+        id_chip: 15,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 3,
+        id_chip: 19,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 4,
+        id_chip: 16,
         createdAt: new Date(),
         updatedAt: new Date()
       },

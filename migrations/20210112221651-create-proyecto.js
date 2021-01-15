@@ -23,8 +23,11 @@ module.exports = {
       link: {
         type: Sequelize.STRING
       },
-      year: {
+      repo: {
         type: Sequelize.STRING
+      },
+      date: {
+        type: Sequelize.DATEONLY
       },
       chips_code: {
         type: Sequelize.STRING

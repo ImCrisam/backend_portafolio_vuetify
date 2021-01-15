@@ -108,6 +108,46 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        nombre: "Vue.js",
+        icon: "vue",
+        nivel: 1,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Express.js",
+        icon: "express",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Bootstrap4",
+        icon: "bootstrap",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Foundation",
+        icon: "foundation",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        nombre: "Vuetify",
+        icon: "vuetify",
+        nivel: 0,
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
 
     ]);
 

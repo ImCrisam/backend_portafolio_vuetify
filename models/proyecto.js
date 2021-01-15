@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.STRING,
     imagen: DataTypes.STRING,
     link: DataTypes.STRING,
-    year: DataTypes.STRING,
+    repo: DataTypes.STRING,
+    date: DataTypes.DATEONLY,
     chips_code: DataTypes.STRING,
     estado: DataTypes.INTEGER
   }, {

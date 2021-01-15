@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   ChipsChips.init({
-    id_chip: DataTypes.INTEGER,
-    id_proyecto: DataTypes.INTEGER
+    id_proyecto: DataTypes.INTEGER,
+    id_chip: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'ChipsChips',

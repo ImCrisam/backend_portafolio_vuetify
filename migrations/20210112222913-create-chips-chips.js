@@ -8,17 +8,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_chip: {
-        type: Sequelize.INTEGER,
-        reference: {
-          model: 'Chips',
-          key: 'id'
-        }
-      },
       id_proyecto: {
         type: Sequelize.INTEGER,
         reference: {
           model: 'Proyecto',
+          key: 'id'
+        }
+      },
+      id_chip: {
+        type: Sequelize.INTEGER,
+        reference: {
+          model: 'Chips',
           key: 'id'
         }
       },

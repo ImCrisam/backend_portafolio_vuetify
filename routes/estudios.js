@@ -12,6 +12,7 @@ router.put('/deactivate', EstudiosController.deactivate);
 
 router.get('/list', EstudiosController.list);
 router.get('/recent', EstudiosController.recentList);
+router.get('/describe', EstudiosController.describe);
 
 
 module.exports = router;

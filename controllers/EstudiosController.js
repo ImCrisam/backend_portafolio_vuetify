@@ -142,7 +142,7 @@ module.exports = {
         try {
             let valor = req.query.valor;
             const reg = await models.Estudios.describe();
-            res.status(200).json(reg);
+            res.status(200).json(Object.keys(reg));
 
         } catch (e) {
             res.status(500).send({
