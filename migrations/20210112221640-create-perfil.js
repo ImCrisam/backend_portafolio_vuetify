@@ -35,12 +35,6 @@ module.exports = {
       imagen: {
         type: Sequelize.STRING
       },
-      languages_code: {
-        type: Sequelize.STRING
-      },
-      tools_code: {
-        type: Sequelize.STRING
-      },
       estado: {
         type: Sequelize.INTEGER
       },
