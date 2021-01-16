@@ -150,7 +150,7 @@ module.exports = {
       },
       {
         nombre: "PostgreSQL",
-        icon: "Postgre",
+        icon: "postgre",
         nivel: 0,
         estado: 1,
         createdAt: new Date(),
