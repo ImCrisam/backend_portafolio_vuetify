@@ -26,7 +26,32 @@ module.exports = {
 
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      },
+      {
+        id_chip: "5",
+
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_chip: "6",
+
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_chip: "7",
+
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_chip: "8",
+
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+     
     ]);
 
   },
