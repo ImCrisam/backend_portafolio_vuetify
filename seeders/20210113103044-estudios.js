@@ -102,7 +102,7 @@ module.exports = {
         date: new Date("2020,8,21"),
         id_certificate: "",
         duration: "",
-        image: "/certificados/lenguajes/C#_soloLearn.jpg",
+        image: "/certificados/lenguajes/csharp_soloLearn.jpg",
         category: "lenguajes",
         estado: 1,
         createdAt: new Date(),
