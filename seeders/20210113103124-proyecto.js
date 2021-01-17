@@ -30,7 +30,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "Protefolio_Frontend",
+        title: "Protefolio Frontend",
         category: "Frontend",
         description: "Proyecto con Vue2-cli y Vuetify para la creación de este portafolio",
         imagen: "",
@@ -43,7 +43,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "Protefolio_Frontend",
+        title: "Protefolio Backend",
         category: "Backend",
         description: "Backend (API) de este proyecto “portafolio” creada con express.js",
         imagen: "",
