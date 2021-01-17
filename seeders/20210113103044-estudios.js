@@ -3,7 +3,123 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
-    return queryInterface.bulkInsert('Estudios', [
+    return queryInterface.bulkInsert('Estudios', [{
+        type: "Curso",
+        title: "Dirección de VideoJuegos",
+        company: "Platzi",
+        date: new Date("2020,8,10"),
+        id_certificate: "",
+        duration: "22",
+        image: "/certificados/videojuegos/avanzado-videojuegos-1.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "creación de videojuegos",
+        company: "Platzi",
+        date: new Date("2020,8,4"),
+        id_certificate: "",
+        duration: "24",
+        image: "/certificados/videojuegos/creacion-videojuegos-1.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "C# para Videojuegos unity",
+        company: "Platzi",
+        date: new Date("2020,8,4"),
+        id_certificate: "",
+        duration: "18",
+        image: "/certificados/videojuegos/desarrollo-unity-1.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Ruta de Aprendizaje",
+        title: "Desarrollo de Videojuegos con unity",
+        company: "Platzi",
+        date: new Date("2020,8,8"),
+        id_certificate: "",
+        duration: "",
+        image: "/certificados/videojuegos/diploma-desarrollo-unity.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "Desarrollo de Videojuegos para móviles con unity",
+        company: "Platzi",
+        date: new Date("2020,11,29"),
+        id_certificate: "",
+        duration: "14",
+        image: "/certificados/videojuegos/diploma-movil-unity.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "Diseño y prototipado personajes",
+        company: "Platzi",
+        date: new Date("2020,8,4"),
+        id_certificate: "",
+        duration: "6",
+        image: "/certificados/videojuegos/diploma-prototipado-personajes.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "Testing de videojuegos",
+        company: "Platzi",
+        date: new Date("2020,8,9"),
+        id_certificate: "",
+        duration: "15",
+        image: "/certificados/videojuegos/diploma-testing-videojuegos.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "Introducción a la programación de videojuegos 3D en Unity",
+        company: "Platzi",
+        date: new Date("2020,9,17"),
+        id_certificate: "",
+        duration: "7",
+        image: "/certificados/videojuegos/diploma-unity-3d.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        type: "Curso",
+        title: "Diseño de Videojuegos",
+        company: "Platzi",
+        date: new Date("2020,8,4"),
+        id_certificate: "",
+        duration: "16",
+        image: "/certificados/videojuegos/diseno-videojuegos -1.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
       {
         type: "Curso",
         title: "Álgebra",
@@ -641,123 +757,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      {
-        type: "Curso",
-        title: "Dirección de VideoJuegos",
-        company: "Platzi",
-        date: new Date("2020,8,10"),
-        id_certificate: "",
-        duration: "",
-        image: "/certificados/videojuegos/avanzado-videojuegos-1.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "creación de videojuegos",
-        company: "Platzi",
-        date: new Date("2020,8,4"),
-        id_certificate: "",
-        duration: "24",
-        image: "/certificados/videojuegos/creacion-videojuegos-1.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "C# para Videojuegos unity",
-        company: "Platzi",
-        date: new Date("2020,8,4"),
-        id_certificate: "",
-        duration: "18",
-        image: "/certificados/videojuegos/desarrollo-unity-1.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Ruta de Aprendizaje",
-        title: "Desarrollo de Videojuegos con unity",
-        company: "Platzi",
-        date: new Date("2020,8,8"),
-        id_certificate: "",
-        duration: "",
-        image: "/certificados/videojuegos/diploma-desarrollo-unity.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "Desarrollo de Videojuegos para móviles con unity",
-        company: "Platzi",
-        date: new Date("2020,11,29"),
-        id_certificate: "",
-        duration: "14",
-        image: "/certificados/videojuegos/diploma-movil-unity.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "Diseño y prototipado personajes",
-        company: "Platzi",
-        date: new Date("2020,8,4"),
-        id_certificate: "",
-        duration: "6",
-        image: "/certificados/videojuegos/diploma-prototipado-personajes.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "Testing de videojuegos",
-        company: "Platzi",
-        date: new Date("2020,8,9"),
-        id_certificate: "",
-        duration: "15",
-        image: "/certificados/videojuegos/diploma-testing-videojuegos.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "Introducción a la programación de videojuegos 3D en Unity",
-        company: "Platzi",
-        date: new Date("2020,9,17"),
-        id_certificate: "",
-        duration: "7",
-        image: "/certificados/videojuegos/diploma-unity-3d.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        type: "Curso",
-        title: "Diseño de Videojuegos",
-        company: "Platzi",
-        date: new Date("2020,8,4"),
-        id_certificate: "",
-        duration: "16",
-        image: "/certificados/videojuegos/diseno-videojuegos -1.jpg",
-        category: "videojuegos",
-        estado: 1,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
+
       {
         type: "Curso",
         title: "Bootstrap",
@@ -810,8 +810,8 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
-      
-     
+
+
 
     ]);
 
