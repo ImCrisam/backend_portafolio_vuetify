@@ -52,6 +52,30 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        id_proyecto: 5,
+        id_chip: 15,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 5,
+        id_chip: 19,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 6,
+        id_chip: 16,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        id_proyecto: 6,
+        id_chip: 21,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ]);
 
   },
