@@ -56,7 +56,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "RetoFinal Mintic2022 Frontend",
+        title: "RetoFinal Mintic2022",
         category: "Frontend",
         description: "Proyecto con Vue2-cli y Vuetify donde desarrollé dashboard, login",
         imagen: "/proyecto/retoFinal_mintic2022.jpg",
@@ -69,10 +69,10 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title: "RetoFinal Mintic2022 Backend",
+        title: "RetoFinal Mintic2022",
         category: "Backend",
-        description: "Backend (API) de este proyecto “portafolio” creada con express.js",
-        imagen: "/proyecto/portafolio_backend.jpg",
+        description: "Backend (API) del proyecto 'RetoFinal Mintic2022' creada con express.js",
+        imagen: "/proyecto/retoFinal mintic2022_backend.jpg",
         link: "",
         repo: "https://github.com/Ciclo-3-MinTic/backend-seamana-4-161",
         date: new Date("2020,12,21"),
