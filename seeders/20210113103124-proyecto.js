@@ -55,6 +55,32 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        title: "RetoFinal Mintic2022 Frontend",
+        category: "Frontend",
+        description: "Proyecto con Vue2-cli y Vuetify donde desarrollé dashboard, login",
+        imagen: "/proyecto/retoFinal_mintic2022.jpg",
+        link: "https://glacial-reef-29701.herokuapp.com/",
+        repo: "https://github.com/Ciclo-3-MinTic/frontend-semana-4-161",
+        date: new Date("2020,12,21"),
+        chips_code: "",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        title: "RetoFinal Mintic2022 Backend",
+        category: "Backend",
+        description: "Backend (API) de este proyecto “portafolio” creada con express.js",
+        imagen: "/proyecto/portafolio_backend.jpg",
+        link: "",
+        repo: "https://github.com/Ciclo-3-MinTic/backend-seamana-4-161",
+        date: new Date("2020,12,21"),
+        chips_code: "",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ]);
   },
 
