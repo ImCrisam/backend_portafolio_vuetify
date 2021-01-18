@@ -35,6 +35,9 @@ module.exports = {
       imagen: {
         type: Sequelize.STRING
       },
+      imagen2: {
+        type: Sequelize.STRING
+      },
       estado: {
         type: Sequelize.INTEGER
       },
