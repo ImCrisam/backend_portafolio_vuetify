@@ -39,7 +39,10 @@ module.exports = {
     list: async (req, res, next) => {
         try {
             let valor = req.query.valor;
-            const reg = await models.Proyecto.findAll();
+            const reg = await models.Proyecto.findAll({
+                order: [["date","DESC"]],
+                
+            });
             var chips
             for (item in reg) {
                 
