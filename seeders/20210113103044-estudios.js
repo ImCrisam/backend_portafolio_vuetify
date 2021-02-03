@@ -43,6 +43,19 @@ module.exports = {
         updatedAt: new Date()
       },
       {
+        type: "Curso",
+        title: "Videojuegos 2D con Unity",
+        company: "Platzi",
+        date: new Date("2021,2,3"),
+        id_certificate: "",
+        duration: "17",
+        image: "/certificados/programacion/diploma-unity-2d.jpg",
+        category: "videojuegos",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         type: "Ruta de Aprendizaje",
         title: "Desarrollo de Videojuegos con unity",
         company: "Platzi",
