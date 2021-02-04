@@ -17,6 +17,19 @@ module.exports = {
       updatedAt: new Date()
       },
       {
+        title: "CryptCreepers",
+        category: "VideoGame",
+        description: "Proyecto con Unity, basado en el Curso: “Videojuegos 2D con Unity” en Platzi",
+        imagen: "/proyecto/Cryptcreepers.jpg",
+        link: "https://imcrisam.itch.io/cryptcreepers",
+        repo: "https://github.com/imcrisam/CryptCreepers_platzi",
+        date: new Date("2021,02,04"),
+        chips_code: "",
+        estado: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         title: "BreachBreaker",
         category: "VideoGame",
         description: "Proyecto con Unity, basado en el Curso: “Desarrollo de Videojuegos para Móviles con Unity” en Platzi",
@@ -48,7 +61,7 @@ module.exports = {
         description: "Backend (API) de este proyecto “portafolio” creada con express.js",
         imagen: "/proyecto/portafolio_backend.jpg",
         link: "",
-        repo: "https://github.com/imcrisam/backend_portafolio_vuetify",
+        repo: "",
         date: new Date("2021,01,01"),
         chips_code: "",
         estado: 1,
